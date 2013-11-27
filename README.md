@@ -1,6 +1,8 @@
 dotpath-stream
 ===
 
+[![Build Status](https://travis-ci.org/jarofghosts/dotpath-stream.png?branch=master)](https://travis-ci.org/jarofghosts/dotpath-stream)
+
 transform object streams by dotpath
 
 ## usage
