@@ -22,6 +22,7 @@ imaginary_object_stream.pipe(dps('file.name')).pipe(process.stdout)
 // => 'filename'
 imaginary_object_stream.pipe(dps('blah')).pipe(process.stdout)
 // => 'bleh'
+```
 
 ## caveats
 
