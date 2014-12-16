@@ -1,7 +1,8 @@
 dotpath-stream
 ==============
 
-[![Build Status](https://travis-ci.org/jarofghosts/dotpath-stream.png?branch=master)](https://travis-ci.org/jarofghosts/dotpath-stream)
+[![Build Status](http://img.shields.io/travis/jarofghosts/dotpath-stream.svg?style=flat)](https://travis-ci.org/jarofghosts/dotpath-stream)
+[![npm install](http://img.shields.io/npm/dm/dotpath-stream.svg?style=flat)](https://www.npmjs.org/package/dotpath-stream)
 
 transform object streams by dotpath lookup
 
