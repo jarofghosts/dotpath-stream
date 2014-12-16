@@ -4,7 +4,7 @@
   "description": "transform object streams by dotpath",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js && node test/deep.js"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,10 @@
   },
   "homepage": "https://github.com/jarofghosts/dotpath-stream",
   "dependencies": {
-    "dotpather": "0.0.2",
-    "through": "~2.3.4"
+    "dotpather": "0.1.3",
+    "through": "^2.3.4"
+  },
+  "devDependencies": {
+    "tape": "^3.0.3"
   }
 }
