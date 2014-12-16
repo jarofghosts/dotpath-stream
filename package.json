@@ -1,6 +1,6 @@
 {
   "name": "dotpath-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "transform object streams by dotpath",
   "main": "index.js",
   "scripts": {
