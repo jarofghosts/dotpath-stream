@@ -56,6 +56,18 @@ test('delegates to fallback for null/undefined if provided', function(t) {
   stream.write({hello: {beakmans: 'lester'}})
 })
 
+test('fallback can be falsey', function(t) {
+  t.plan(1)
+
+  var stream = dps('hello.beakmans', '')
+
+  stream.once('data', function(data) {
+    t.equal(data, '')
+  })
+
+  stream.write({})
+})
+
 test('fallback defaults to {}', function(t) {
   t.plan(1)
 

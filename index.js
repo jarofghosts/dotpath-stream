@@ -1,18 +1,18 @@
 var dotpather = require('dotpather')
   , through = require('through')
 
-module.exports = dotpath_stream
+module.exports = dotpathStream
 
-function dotpath_stream(path, fallback) {
+function dotpathStream(path, fallback) {
   var lookup = dotpather(path)
 
-  return through(do_lookup)
+  return through(doLookup)
 
-  function do_lookup(data) {
+  function doLookup(data) {
     var value = lookup(data)
 
-    if(value === null || typeof value === 'undefined') {
-      value = fallback || {}
+    if(typeof value === 'undefined') {
+      value = typeof fallback === 'undefined' ? {} : fallback
     }
 
     this.queue(value)
