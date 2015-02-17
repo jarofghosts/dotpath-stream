@@ -12,7 +12,7 @@ function dotpathStream(path, fallback) {
     var value = lookup(data)
 
     if(typeof value === 'undefined') {
-      value = typeof fallback === 'undefined' ? {} : fallback
+      value = fallback
     }
 
     this.queue(value)

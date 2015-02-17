@@ -68,13 +68,13 @@ test('fallback can be falsey', function(t) {
   stream.write({})
 })
 
-test('fallback defaults to {}', function(t) {
+test('fallback has no default', function(t) {
   t.plan(1)
 
   var stream = dps('hello.beakmans')
 
   stream.once('data', function(data) {
-    t.deepEqual(data, {})
+    t.equal(data, undefined)
   })
 
   stream.write({herp: 'derp'})
